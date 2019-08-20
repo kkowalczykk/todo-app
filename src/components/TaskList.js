@@ -9,13 +9,13 @@ const TaskList = (props) => {
       const finishedTasks = finished.map(task => <Task key={task.id} task={task} delete={props.delete} changeStatus={props.changeStatus} />)
 
       return (
-            <div>
+            <div className="TaskList">
                   <div className="active-task">
                         <h2>Task List</h2>
                         {activeTasks}
 
                   </div>
-                  <hr />
+                  {/* <hr /> */}
                   <div className="finished-task">
                         <h2>Finished Tasks</h2>
                         {finishedTasks}

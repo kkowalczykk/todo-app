@@ -1,3 +1,64 @@
+
 .App {
   text-align: center;
+  box-sizing: border-box; 
+  margin: 0;
+  width: 70%;
+  display: flex;
+  flex-direction: column; 
+}
+
+.AddTask, .finished-task, .active-task {
+  margin-bottom: 40px; 
+  min-height: 20vh;
+  color: #fff;
+}
+
+.finished-task, .active-task {
+  background-color: #292626;
+  border-radius: 20px;
+  border: 1px solid;
+}
+#task-name, #date{
+  height: 20%;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #610707;
+  border-radius: 15px;
+  line-height: 20px;
+
+}
+
+
+
+*:focus {
+  outline: none;
+}
+
+#important, #date{
+  margin-left: 40px;
+}
+
+.AddTask button{
+  border-radius: 15px;
+  width: 15%;
+  height: 40%;
+  padding: 10px 15px;
+  color: #fff;
+  border-color: #fff;
+  background-color: #000000;
+}
+
+.AddTask button:hover{
+  background-color: #292626;
+}
+
+.TaskList button{
+  background-color: #000000;
+  color: #fff;
+  
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 15px;
 }
